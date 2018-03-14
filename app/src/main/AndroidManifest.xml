@@ -16,6 +16,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Quiz" />
+        <activity android:name=".Myth" />
+        <activity android:name=".Food" />
+        <activity android:name=".Bmi" />
+        <activity android:name=".Screening"></activity>
     </application>
 
 </manifest>

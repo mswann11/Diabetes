@@ -15,8 +15,9 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Diabetes"
+            android:text="Type 2 Diabetes"
             android:padding="24dp"
+            android:layout_marginBottom="24dp"
             android:textColor="#009688"
             android:textSize="36sp"
             android:textStyle="bold"/>
@@ -35,11 +36,11 @@
             android:orientation="horizontal"
             android:paddingLeft="32dp"
             android:paddingBottom="24dp">
-            <ImageView
-                android:layout_width="wrap_content"
+            <Button
+                android:layout_width="60dp"
                 android:layout_height="wrap_content"
-                android:src="@drawable/brain_icon_small"
-                android:scaleType="fitStart"/>
+                android:background="@drawable/brain_icon_small"
+                android:onClick="quiz"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -56,11 +57,11 @@
             android:orientation="horizontal"
             android:paddingLeft="32dp"
             android:paddingBottom="24dp">
-                <ImageView
-                    android:layout_width="wrap_content"
+                <Button
+                    android:layout_width="60dp"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/lightbulb_icon_small"
-                    android:scaleType="fitStart"/>
+                    android:background="@drawable/lightbulb_icon_small"
+                    android:onClick="myth" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -77,11 +78,11 @@
             android:orientation="horizontal"
             android:paddingLeft="32dp"
             android:paddingBottom="24dp">
-            <ImageView
-                android:layout_width="wrap_content"
+            <Button
+                android:layout_width="60dp"
                 android:layout_height="wrap_content"
-                android:src="@drawable/food_icon_small"
-                android:scaleType="fitStart"/>
+                android:background="@drawable/food_icon_small"
+                android:onClick="food"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -98,11 +99,11 @@
             android:orientation="horizontal"
             android:paddingLeft="32dp"
             android:paddingBottom="24dp">
-            <ImageView
-                android:layout_width="wrap_content"
+            <Button
+                android:layout_width="60dp"
                 android:layout_height="wrap_content"
-                android:src="@drawable/scale_icon_small"
-                android:scaleType="fitStart"/>
+                android:background="@drawable/scale_icon_small"
+                android:onClick="bmi"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -119,11 +120,11 @@
             android:orientation="horizontal"
             android:paddingLeft="32dp"
             android:paddingBottom="24dp">
-            <ImageView
-                android:layout_width="wrap_content"
+            <Button
+                android:layout_width="60dp"
                 android:layout_height="wrap_content"
-                android:src="@drawable/screening_icon_small"
-                android:scaleType="fitStart"/>
+                android:background="@drawable/screening_icon_small"
+                android:onClick="screening"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
