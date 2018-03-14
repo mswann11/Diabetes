@@ -1,3 +1,39 @@
 <resources>
     <string name="app_name">Understanding Diabetes</string>
+    <string-array name="age_array">
+        <item>Less than 40 years</item>
+        <item>40-49 years</item>
+        <item>50-59 years</item>
+        <item>60 years or older</item>
+    </string-array>
+    <string-array name="sex_array">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    <string-array name="gestational_array">
+        <item>No</item>
+        <item>Yes</item>
+    </string-array>
+    <string-array name="relative_array">
+        <item>No</item>
+        <item>Yes</item>
+    </string-array>
+    <string-array name="vegetable_array">
+        <item>Carrots</item>
+        <item>Broccoli</item>
+        <item>Spinach</item>
+        <item>Cauliflower</item>
+    </string-array>
+    <string-array name="protein_array">
+        <item>Beans</item>
+        <item>Fish</item>
+        <item>Chicken</item>
+        <item>Soy</item>
+    </string-array>
+    <string-array name="grain_array">
+        <item>Sweet Potatoes</item>
+        <item>Quinoa</item>
+        <item>Brown Rice</item>
+        <item>Corn</item>
+    </string-array>
 </resources>

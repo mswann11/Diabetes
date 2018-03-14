@@ -5,23 +5,108 @@
     tools:context=".MainActivity"
     android:fillViewport="true"
     android:background="#E0F2F1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Type 2 Diabetes\nRisk Assessment"
+        android:padding="24dp"
+        android:textColor="#009688"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginBottom="24dp"
+        android:padding="24dp"
+        android:background="@drawable/rectangle"
+        android:translationZ="6dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="How old are you?"
+            android:textColor="#000"
+            android:paddingBottom="8dp"
+            android:textSize="20sp"
+            android:layout_marginLeft="32dp"/>
+        <Spinner
+            android:id="@+id/age_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginBottom="32dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Are you male or female?"
+            android:textColor="#000"
+            android:paddingBottom="8dp"
+            android:textSize="20sp"
+            android:layout_marginLeft="32dp"/>
+        <Spinner
+            android:id="@+id/sex_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginBottom="32dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="If you are female, have you ever been diagnosed with gestational diabetes?"
+            android:textColor="#000"
+            android:paddingBottom="8dp"
+            android:textSize="20sp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"/>
+        <Spinner
+            android:id="@+id/gestational_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginBottom="32dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Do you have a mother, father, sister, or brother with diabetes?"
+            android:textColor="#000"
+            android:paddingBottom="8dp"
+            android:textSize="20sp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"/>
+        <Spinner
+            android:id="@+id/relative_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginBottom="32dp"/>
+
+    </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:padding="16dp">
         <Button
-            android:layout_width="60dp"
-            android:layout_height="wrap_content"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
             android:background="@drawable/back_icon_small"
             android:onClick="main"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Back to Main Page"
-            android:textSize="24dp"
-            android:textStyle="bold"
+            android:textSize="20sp"
             android:gravity="center"
             android:padding="16dp"/>
+    </LinearLayout>
     </LinearLayout>
 </ScrollView>

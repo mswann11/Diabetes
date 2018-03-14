@@ -11,16 +11,15 @@
         android:orientation="horizontal"
         android:padding="16dp">
         <Button
-            android:layout_width="60dp"
-            android:layout_height="wrap_content"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
             android:background="@drawable/back_icon_small"
             android:onClick="main"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Back to Main Page"
-            android:textSize="24dp"
-            android:textStyle="bold"
+            android:textSize="20sp"
             android:gravity="center"
             android:padding="16dp"/>
     </LinearLayout>
