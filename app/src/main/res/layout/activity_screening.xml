@@ -33,7 +33,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="How old are you?"
+            android:text="1. How old are you?"
             android:textColor="#000"
             android:paddingBottom="8dp"
             android:textSize="20sp"
@@ -47,7 +47,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Are you male or female?"
+            android:text="2. Are you male or female?"
             android:textColor="#000"
             android:paddingBottom="8dp"
             android:textSize="20sp"
@@ -61,7 +61,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="If you are female, have you ever been diagnosed with gestational diabetes?"
+            android:text="3. If you are female, have you ever been diagnosed with gestational diabetes?"
             android:textColor="#000"
             android:paddingBottom="8dp"
             android:textSize="20sp"
@@ -76,7 +76,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Do you have a mother, father, sister, or brother with diabetes?"
+            android:text="4. Do you have a mother, father, sister, or brother with diabetes?"
             android:textColor="#000"
             android:paddingBottom="8dp"
             android:textSize="20sp"
@@ -88,6 +88,109 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="32dp"
             android:layout_marginBottom="32dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5. Have you ever been diagnosed with high blood pressure?"
+            android:textColor="#000"
+            android:paddingBottom="8dp"
+            android:textSize="20sp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"/>
+
+        <Spinner
+            android:id="@+id/bp_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginBottom="32dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6. Are you physically active?"
+            android:textColor="#000"
+            android:paddingBottom="8dp"
+            android:textSize="20sp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"/>
+
+        <Spinner
+            android:id="@+id/active_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginBottom="32dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7. What is your height?"
+            android:textColor="#000"
+            android:paddingBottom="8dp"
+            android:textSize="20sp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="50dp"
+            android:layout_marginBottom="20dp">
+            <EditText
+                android:id="@+id/feet"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:hint="feet"
+                android:inputType="number"
+                android:layout_marginRight="16dp"
+                android:gravity="center"/>
+            <EditText
+                android:id="@+id/inches"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:hint="inches"
+                android:inputType="number"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8. What is your weight?"
+            android:textColor="#000"
+            android:paddingBottom="8dp"
+            android:textSize="20sp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="50dp"
+            android:layout_marginBottom="20dp">
+            <EditText
+                android:id="@+id/pounds"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:hint="pounds"
+                android:inputType="number"
+                android:layout_marginRight="16dp"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calculate Risk"
+            android:layout_gravity="center"
+            android:paddingHorizontal="20dp"
+            android:textColor="#FFF"
+            android:background="@color/colorPrimary"
+            android:textSize="16sp"/>
 
     </LinearLayout>
     <LinearLayout

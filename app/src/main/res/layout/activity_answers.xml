@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/light"
+    android:background="#E0F2F1"
     android:fillViewport="true"
     tools:context=".Quiz">
 
@@ -15,16 +15,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:padding="@dimen/padding"
-            android:text="@string/test"
-            android:textColor="@color/aqua"
-            android:textSize="@dimen/title"
+            android:padding="24dp"
+            android:text="Test Your Knowledge"
+            android:textColor="#009688"
+            android:textSize="24sp"
             android:textStyle="bold" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/padding"
+            android:layout_marginBottom="24dp"
             android:layout_marginHorizontal="24dp"
             android:background="@drawable/rectangle"
             android:orientation="vertical"
@@ -57,36 +57,47 @@
                     android:id="@+id/q1_o1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:gravity="top"
-                    android:padding="4dp"
                     android:text="Too much sugar, or glucose, in the bloodstream"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"
+                    android:padding="4dp"
+                    android:gravity="top"
+                    android:checked="true"/>
 
                 <RadioButton
                     android:id="@+id/q1_o2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:gravity="top"
-                    android:padding="4dp"
                     android:text="Too much insulin, a hormone, in the bloodstream"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"
+                    android:padding="4dp"
+                    android:gravity="top"
+                    android:clickable="false"/>
 
                 <RadioButton
                     android:id="@+id/q1_o3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:padding="4dp"
                     android:text="Being overweight or obese"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"
+                    android:padding="4dp"
+                    android:clickable="false"/>
 
                 <RadioButton
                     android:id="@+id/q1_o4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:padding="4dp"
                     android:text="High cholesterol levels"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"
+                    android:padding="4dp"
+                    android:clickable="false"/>
             </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Diabetes is a problem with your body that causes blood glucose (sugar) levels to rise higher than normal. This is also called hyperglycemia."
+                android:padding="16dp"
+                android:textSize="16sp"/>
         </LinearLayout>
 
         <LinearLayout
@@ -125,37 +136,47 @@
                     android:id="@+id/q2_o1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:padding="4dp"
                     android:text="Allow you to eat whatever you choose"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"
+                    android:padding="4dp"
+                    android:clickable="false"/>
 
                 <RadioButton
                     android:id="@+id/q2_o2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:gravity="top"
-                    android:padding="4dp"
                     android:text="Ensure that your blood glucose level stays normal"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"
+                    android:padding="4dp"
+                    android:gravity="top"
+                    android:clickable="false"/>
 
                 <RadioButton
                     android:id="@+id/q2_o3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:gravity="top"
-                    android:padding="4dp"
                     android:text="Give you the feedback you need to keep your blood glucose in target range"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"
+                    android:padding="4dp"
+                    android:gravity="top"
+                    android:checked="true"/>
 
                 <RadioButton
                     android:id="@+id/q2_o4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:gravity="top"
-                    android:padding="4dp"
                     android:text="Not be necessary, as long as you eat right"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"
+                    android:padding="4dp"
+                    android:gravity="top"
+                    android:clickable="false"/>
             </RadioGroup>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Monitoring alone does not change the blood glucose level, but the only way to know if you are keeping your blood glucose levels in the target range is to monitor your blood glucose. While it is important to eat a healthy diet, diet alone may not be sufficient. "
+                android:padding="16dp"
+                android:textSize="16sp"/>
         </LinearLayout>
 
         <LinearLayout
@@ -189,43 +210,56 @@
                 android:id="@+id/q3_o1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:padding="4dp"
                 android:text="Oral medications"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                android:padding="4dp"
+                android:clickable="false"
+                android:checked="true"/>
 
             <CheckBox
                 android:id="@+id/q3_o2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:padding="4dp"
                 android:text="Drinking 100% fruit juice"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                android:padding="4dp"
+                android:clickable="false"/>
 
             <CheckBox
                 android:id="@+id/q3_o3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:padding="4dp"
                 android:text="Insulin"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                android:padding="4dp"
+                android:clickable="false"
+                android:checked="true"/>
 
             <CheckBox
                 android:id="@+id/q3_o4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="top"
-                android:padding="4dp"
                 android:text="Lifestyle changes, such as diet and exercise"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                android:padding="4dp"
+                android:gravity="top"
+                android:clickable="false"
+                android:checked="true"/>
 
             <CheckBox
                 android:id="@+id/q3_o5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:padding="4dp"
                 android:text="Avoiding sunlight"
-                android:textSize="16sp" />
-
+                android:textSize="16sp"
+                android:padding="4dp"
+                android:clickable="false"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The two goals of diabetes treatment are to make sure you feel well day-to-day and to prevent or delay long-term health problems. The best way to reach those goals is by taking medications (oral pills or injectable insulin, as prescribed by your doctor), planning your meals appropriately, and being physically active. Juices are often high in sugar and are not recommended for those with diabetes. Avoiding sunlight is not part of diabetes treatment."
+                android:padding="16dp"
+                android:textSize="16sp"/>
         </LinearLayout>
 
         <LinearLayout
@@ -264,36 +298,46 @@
                     android:id="@+id/q4_o1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:padding="4dp"
                     android:text="Liver"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"
+                    android:padding="4dp"
+                    android:clickable="false"/>
 
                 <RadioButton
                     android:id="@+id/q4_o2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:padding="4dp"
                     android:text="Pancreas"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"
+                    android:padding="4dp"
+                    android:checked="true"/>
 
                 <RadioButton
                     android:id="@+id/q4_o3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:gravity="top"
-                    android:padding="4dp"
                     android:text="Thyroid"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"
+                    android:padding="4dp"
+                    android:gravity="top"
+                    android:clickable="false"/>
 
                 <RadioButton
                     android:id="@+id/q4_o4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:gravity="top"
-                    android:padding="4dp"
                     android:text="Gallbladder"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"
+                    android:padding="4dp"
+                    android:gravity="top"
+                    android:clickable="false"/>
             </RadioGroup>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The pancreas is an organ located behind the lower part of the stomach, in front of the spine and plays an important part in diabetes. The pancreas is the organ which produces insulin, one the main hormones that helps to regulate blood glucose levels."
+                android:padding="16dp"
+                android:textSize="16sp"/>
         </LinearLayout>
 
         <LinearLayout
@@ -327,68 +371,58 @@
                 android:id="@+id/q5_o1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:padding="4dp"
                 android:text="Kidneys"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                android:padding="4dp"
+                android:clickable="false"
+                android:checked="true"/>
 
             <CheckBox
                 android:id="@+id/q5_o2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:padding="4dp"
                 android:text="Eyes"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                android:padding="4dp"
+                android:clickable="false"
+                android:checked="true"/>
 
             <CheckBox
                 android:id="@+id/q5_o3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:padding="4dp"
                 android:text="Nerves"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                android:padding="4dp"
+                android:clickable="false"
+                android:checked="true"/>
 
             <CheckBox
                 android:id="@+id/q5_o4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:padding="4dp"
                 android:text="Heart"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                android:padding="4dp"
+                android:clickable="false"
+                android:checked="true"/>
 
             <CheckBox
                 android:id="@+id/q5_o5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:padding="4dp"
                 android:text="Mental Health"
-                android:textSize="16sp" />
-
+                android:textSize="16sp"
+                android:padding="4dp"
+                android:clickable="false"
+                android:checked="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Diabetes can affect many areas of the body, and there are numerous complications that can occur. These can include cardiovascular disease, glaucoma, peripheral neuropathy, kidney damage, depression, and many others. "
+                android:padding="16dp"
+                android:textSize="16sp"/>
         </LinearLayout>
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginBottom="16dp"
-            android:background="@color/colorPrimary"
-            android:onClick="checkAnswers"
-            android:paddingHorizontal="16dp"
-            android:text="Check My Answers"
-            android:textColor="#FFF"
-            android:textSize="16dp" />
-
-        <Button
-            android:id="@+id/show"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:background="@color/colorPrimary"
-            android:onClick="showAnswers"
-            android:paddingHorizontal="16dp"
-            android:text="Show Correct Answers"
-            android:textColor="#FFF"
-            android:textSize="16dp"
-            android:visibility="invisible" />
 
         <LinearLayout
             android:layout_width="match_parent"

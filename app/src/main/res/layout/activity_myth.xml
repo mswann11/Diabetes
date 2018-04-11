@@ -5,6 +5,42 @@
     tools:context=".MainActivity"
     android:fillViewport="true"
     android:background="#E0F2F1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Myth or Fact?"
+        android:padding="24dp"
+        android:textColor="#009688"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="There are many myths about Diabetes."
+            android:padding="16dp"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_margin="32dp"/>
+
+        <Button
+            android:id="@+id/next_myth1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start >>"
+            android:layout_gravity="center"
+            android:layout_margin="32dp"
+            android:background="@color/colorPrimary"
+            android:textColor="#FFF"
+            android:textSize="16sp"
+            android:onClick="myth_start"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -22,5 +58,6 @@
             android:textSize="20sp"
             android:gravity="center"
             android:padding="16dp"/>
+    </LinearLayout>
     </LinearLayout>
 </ScrollView>

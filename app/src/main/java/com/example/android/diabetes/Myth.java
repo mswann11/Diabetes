@@ -17,4 +17,24 @@ public class Myth extends AppCompatActivity {
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
+
+    public void myth_start(View view) {
+        setContentView(R.layout.activity_myth1);
+    }
+
+    public void myth_2(View view) {
+        setContentView(R.layout.activity_myth2);
+    }
+
+    public void myth_3(View view) {
+        setContentView(R.layout.activity_myth3);
+    }
+
+    public void myth_4(View view) {
+        setContentView(R.layout.activity_myth4);
+    }
+
+    public void myth_5(View view) {
+        setContentView(R.layout.activity_myth5);
+    }
 }

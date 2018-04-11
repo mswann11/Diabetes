@@ -25,28 +25,28 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/padding"
-            android:layout_marginHorizontal="24dp"
+            android:layout_marginHorizontal="@dimen/padding"
             android:background="@drawable/rectangle"
             android:orientation="vertical"
-            android:padding="24dp"
-            android:translationZ="6dp">
+            android:padding="@dimen/padding"
+            android:translationZ="@dimen/shadow">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingBottom="8dp"
-                android:text="Question 1"
+                android:paddingBottom="@dimen/bottom"
+                android:text="@string/question_1"
                 android:textAllCaps="true"
-                android:textColor="#000"
-                android:textSize="16sp" />
+                android:textColor="@color/black"
+                android:textSize="@dimen/header" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingBottom="8dp"
-                android:text="Type 2 diabetes, or diabetes mellitus, characterized by:"
-                android:textColor="#000"
-                android:textSize="16sp" />
+                android:paddingBottom="@dimen/bottom"
+                android:text="@string/first_q"
+                android:textColor="@color/black"
+                android:textSize="@dimen/header" />
 
             <RadioGroup
                 android:layout_width="wrap_content"
@@ -58,63 +58,63 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="top"
-                    android:padding="4dp"
-                    android:text="Too much sugar, or glucose, in the bloodstream"
-                    android:textSize="16sp" />
+                    android:padding="@dimen/between"
+                    android:text="@string/q1_o1"
+                    android:textSize="@dimen/header" />
 
                 <RadioButton
                     android:id="@+id/q1_o2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="top"
-                    android:padding="4dp"
-                    android:text="Too much insulin, a hormone, in the bloodstream"
-                    android:textSize="16sp" />
+                    android:padding="@dimen/between"
+                    android:text="@string/q1_o2"
+                    android:textSize="@dimen/header" />
 
                 <RadioButton
                     android:id="@+id/q1_o3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:padding="4dp"
-                    android:text="Being overweight or obese"
-                    android:textSize="16sp" />
+                    android:padding="@dimen/between"
+                    android:text="@string/q1_o3"
+                    android:textSize="@dimen/header" />
 
                 <RadioButton
                     android:id="@+id/q1_o4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:padding="4dp"
-                    android:text="High cholesterol levels"
-                    android:textSize="16sp" />
+                    android:padding="@dimen/between"
+                    android:text="@string/q1_o4"
+                    android:textSize="@dimen/header" />
             </RadioGroup>
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="24dp"
-            android:layout_marginHorizontal="24dp"
+            android:layout_marginBottom="@dimen/padding"
+            android:layout_marginHorizontal="@dimen/padding"
             android:background="@drawable/rectangle"
-            android:elevation="6dp"
+            android:elevation="@dimen/shadow"
             android:orientation="vertical"
-            android:padding="24dp">
+            android:padding="@dimen/padding">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingBottom="8dp"
-                android:text="Question 2"
+                android:paddingBottom="@dimen/bottom"
+                android:text="@string/second_q"
                 android:textAllCaps="true"
-                android:textColor="#000"
-                android:textSize="16sp" />
+                android:textColor="@color/black"
+                android:textSize="@dimen/header" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingBottom="8dp"
-                android:text="Monitoring your blood glucose will:"
-                android:textColor="#000"
-                android:textSize="16sp" />
+                android:paddingBottom="@dimen/bottom"
+                android:text="@string/question_2"
+                android:textColor="@color/black"
+                android:textSize="@dimen/header" />
 
             <RadioGroup
                 android:layout_width="wrap_content"
@@ -125,135 +125,135 @@
                     android:id="@+id/q2_o1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:padding="4dp"
-                    android:text="Allow you to eat whatever you choose"
-                    android:textSize="16sp" />
+                    android:padding="@dimen/between"
+                    android:text="@string/q2_o1"
+                    android:textSize="@dimen/header" />
 
                 <RadioButton
                     android:id="@+id/q2_o2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="top"
-                    android:padding="4dp"
-                    android:text="Ensure that your blood glucose level stays normal"
-                    android:textSize="16sp" />
+                    android:padding="@dimen/between"
+                    android:text="@string/q2_o2"
+                    android:textSize="@dimen/header" />
 
                 <RadioButton
                     android:id="@+id/q2_o3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="top"
-                    android:padding="4dp"
-                    android:text="Give you the feedback you need to keep your blood glucose in target range"
-                    android:textSize="16sp" />
+                    android:padding="@dimen/between"
+                    android:text="@string/q2_o3"
+                    android:textSize="@dimen/header" />
 
                 <RadioButton
                     android:id="@+id/q2_o4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="top"
-                    android:padding="4dp"
-                    android:text="Not be necessary, as long as you eat right"
-                    android:textSize="16sp" />
+                    android:padding="@dimen/between"
+                    android:text="@string/q2_o4"
+                    android:textSize="@dimen/header" />
             </RadioGroup>
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="24dp"
-            android:layout_marginHorizontal="24dp"
+            android:layout_marginBottom="@dimen/padding"
+            android:layout_marginHorizontal="@dimen/padding"
             android:background="@drawable/rectangle"
-            android:elevation="6dp"
+            android:elevation="@dimen/shadow"
             android:orientation="vertical"
-            android:padding="24dp">
+            android:padding="@dimen/padding">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingBottom="8dp"
-                android:text="Question 3"
+                android:paddingBottom="@dimen/bottom"
+                android:text="@string/question_3"
                 android:textAllCaps="true"
-                android:textColor="#000"
-                android:textSize="16sp" />
+                android:textColor="@color/black"
+                android:textSize="@dimen/header" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingBottom="8dp"
-                android:text="Type 2 Diabetes may be treated with which of the following? (select all that apply)"
-                android:textColor="#000"
-                android:textSize="16sp" />
+                android:paddingBottom="@dimen/bottom"
+                android:text="@string/third_q"
+                android:textColor="@color/black"
+                android:textSize="@dimen/header" />
 
             <CheckBox
                 android:id="@+id/q3_o1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:padding="4dp"
-                android:text="Oral medications"
-                android:textSize="16sp" />
+                android:padding="@dimen/between"
+                android:text="@string/q3_o1"
+                android:textSize="@dimen/header" />
 
             <CheckBox
                 android:id="@+id/q3_o2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:padding="4dp"
-                android:text="Drinking 100% fruit juice"
-                android:textSize="16sp" />
+                android:padding="@dimen/between"
+                android:text="@string/q3_o2"
+                android:textSize="@dimen/header" />
 
             <CheckBox
                 android:id="@+id/q3_o3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:padding="4dp"
-                android:text="Insulin"
-                android:textSize="16sp" />
+                android:padding="@dimen/between"
+                android:text="@string/q3_o3"
+                android:textSize="@dimen/header" />
 
             <CheckBox
                 android:id="@+id/q3_o4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="top"
-                android:padding="4dp"
-                android:text="Lifestyle changes, such as diet and exercise"
-                android:textSize="16sp" />
+                android:padding="@dimen/between"
+                android:text="@string/q3_o4"
+                android:textSize="@dimen/header" />
 
             <CheckBox
                 android:id="@+id/q3_o5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:padding="4dp"
-                android:text="Avoiding sunlight"
-                android:textSize="16sp" />
+                android:padding="@dimen/between"
+                android:text="@string/q3_o5"
+                android:textSize="@dimen/header" />
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="24dp"
-            android:layout_marginHorizontal="24dp"
+            android:layout_marginBottom="@dimen/padding"
+            android:layout_marginHorizontal="@dimen/padding"
             android:background="@drawable/rectangle"
-            android:elevation="6dp"
+            android:elevation="@dimen/shadow"
             android:orientation="vertical"
-            android:padding="24dp">
+            android:padding="@dimen/padding">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingBottom="8dp"
-                android:text="Question 4"
+                android:paddingBottom="@dimen/bottom"
+                android:text="@string/question_4"
                 android:textAllCaps="true"
-                android:textColor="#000"
-                android:textSize="16sp" />
+                android:textColor="@color/black"
+                android:textSize="@dimen/header" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingBottom="8dp"
-                android:text="In type 2 diabetes, your body does not use insulin properly. This is called insulin resistance. At first, your body makes extra insulin to make up for it. But, over time your __________ isn’t able to keep up and can’t make enough insulin to keep your blood glucose levels normal."
-                android:textColor="#000"
-                android:textSize="16sp" />
+                android:paddingBottom="@dimen/bottom"
+                android:text="@string/fourth_q"
+                android:textColor="@color/black"
+                android:textSize="@dimen/header" />
 
             <RadioGroup
                 android:layout_width="wrap_content"
@@ -264,104 +264,104 @@
                     android:id="@+id/q4_o1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:padding="4dp"
-                    android:text="Liver"
-                    android:textSize="16sp" />
+                    android:padding="@dimen/between"
+                    android:text="@string/q4_o1"
+                    android:textSize="@dimen/header" />
 
                 <RadioButton
                     android:id="@+id/q4_o2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:padding="4dp"
-                    android:text="Pancreas"
-                    android:textSize="16sp" />
+                    android:padding="@dimen/between"
+                    android:text="@string/q4_o2"
+                    android:textSize="@dimen/header" />
 
                 <RadioButton
                     android:id="@+id/q4_o3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="top"
-                    android:padding="4dp"
-                    android:text="Thyroid"
-                    android:textSize="16sp" />
+                    android:padding="@dimen/between"
+                    android:text="@string/q4_o3"
+                    android:textSize="@dimen/header" />
 
                 <RadioButton
                     android:id="@+id/q4_o4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="top"
-                    android:padding="4dp"
-                    android:text="Gallbladder"
-                    android:textSize="16sp" />
+                    android:padding="@dimen/between"
+                    android:text="@string/q4_04"
+                    android:textSize="@dimen/header" />
             </RadioGroup>
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="24dp"
-            android:layout_marginHorizontal="24dp"
+            android:layout_marginBottom="@dimen/padding"
+            android:layout_marginHorizontal="@dimen/padding"
             android:background="@drawable/rectangle"
-            android:elevation="6dp"
+            android:elevation="@dimen/shadow"
             android:orientation="vertical"
-            android:padding="24dp">
+            android:padding="@dimen/padding">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingBottom="8dp"
-                android:text="Question 5"
+                android:paddingBottom="@dimen/bottom"
+                android:text="@string/question_5"
                 android:textAllCaps="true"
-                android:textColor="#000"
-                android:textSize="16sp" />
+                android:textColor="@color/black"
+                android:textSize="@dimen/header" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingBottom="8dp"
-                android:text="Over time, high blood glucose levels may affect which of the following? (select all that apply)"
-                android:textColor="#000"
-                android:textSize="16sp" />
+                android:paddingBottom="@dimen/bottom"
+                android:text="@string/fifth_q"
+                android:textColor="@color/black"
+                android:textSize="@dimen/header" />
 
             <CheckBox
                 android:id="@+id/q5_o1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:padding="4dp"
-                android:text="Kidneys"
-                android:textSize="16sp" />
+                android:padding="@dimen/between"
+                android:text="@string/q5_o1"
+                android:textSize="@dimen/header" />
 
             <CheckBox
                 android:id="@+id/q5_o2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:padding="4dp"
-                android:text="Eyes"
-                android:textSize="16sp" />
+                android:padding="@dimen/between"
+                android:text="@string/q5_o2"
+                android:textSize="@dimen/header" />
 
             <CheckBox
                 android:id="@+id/q5_o3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:padding="4dp"
-                android:text="Nerves"
+                android:padding="@dimen/between"
+                android:text="@string/q5_o3"
                 android:textSize="16sp" />
 
             <CheckBox
                 android:id="@+id/q5_o4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:padding="4dp"
-                android:text="Heart"
-                android:textSize="16sp" />
+                android:padding="@dimen/between"
+                android:text="@string/q5_o4"
+                android:textSize="@dimen/header" />
 
             <CheckBox
                 android:id="@+id/q5_o5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:padding="4dp"
-                android:text="Mental Health"
-                android:textSize="16sp" />
+                android:padding="@dimen/between"
+                android:text="@string/q5_o5"
+                android:textSize="@dimen/header" />
 
         </LinearLayout>
 
@@ -369,13 +369,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginBottom="16dp"
+            android:layout_marginBottom="@dimen/button_margin"
             android:background="@color/colorPrimary"
             android:onClick="checkAnswers"
-            android:paddingHorizontal="16dp"
-            android:text="Check My Answers"
-            android:textColor="#FFF"
-            android:textSize="16dp" />
+            android:paddingHorizontal="@dimen/button_margin"
+            android:text="@string/check"
+            android:textColor="@color/white"
+            android:textSize="@dimen/header" />
 
         <Button
             android:id="@+id/show"
@@ -384,21 +384,21 @@
             android:layout_gravity="center"
             android:background="@color/colorPrimary"
             android:onClick="showAnswers"
-            android:paddingHorizontal="16dp"
-            android:text="Show Correct Answers"
-            android:textColor="#FFF"
-            android:textSize="16dp"
+            android:paddingHorizontal="@dimen/button_margin"
+            android:text="@string/show"
+            android:textColor="@color/white"
+            android:textSize="@dimen/header"
             android:visibility="invisible" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:padding="16dp">
+            android:padding="@dimen/button_margin">
 
             <Button
-                android:layout_width="40dp"
-                android:layout_height="40dp"
+                android:layout_width="@dimen/margin_large"
+                android:layout_height="@dimen/margin_large"
                 android:background="@drawable/back_icon_small"
                 android:onClick="main" />
 
@@ -406,9 +406,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:padding="16dp"
-                android:text="Back to Main Page"
-                android:textSize="20sp" />
+                android:padding="@dimen/button_margin"
+                android:text="@string/main"
+                android:textSize="@dimen/back_text" />
         </LinearLayout>
     </LinearLayout>
 </ScrollView>

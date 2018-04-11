@@ -37,6 +37,19 @@ public class Screening extends AppCompatActivity {
                 R.array.relative_array, android.R.layout.simple_spinner_item);
         relativeAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         relativeSpinner.setAdapter(relativeAdapter);
+
+        Spinner bpSpinner = (Spinner) findViewById(R.id.bp_spinner);
+        ArrayAdapter<CharSequence> bpAdapter = ArrayAdapter.createFromResource(this,
+                R.array.bp_array, android.R.layout.simple_spinner_item);
+        bpAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        bpSpinner.setAdapter(bpAdapter);
+
+        Spinner activeSpinner = (Spinner) findViewById(R.id.active_spinner);
+        ArrayAdapter<CharSequence> activeAdapter = ArrayAdapter.createFromResource(this,
+                R.array.active_array, android.R.layout.simple_spinner_item);
+        activeAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        activeSpinner.setAdapter(activeAdapter);
+
     }
 
     public void main(View view) {

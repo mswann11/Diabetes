@@ -1,5 +1,41 @@
 <resources>
     <string name="app_name">Understanding Diabetes</string>
+    <string name="test">Test Your Knowledge</string>
+    <string name="question_1">Question 1</string>
+    <string name="first_q">Type 2 diabetes, or diabetes mellitus, characterized by:</string>
+    <string name="q1_o1">Too much sugar, or glucose, in the bloodstream</string>
+    <string name="q1_o2">Too much insulin, a hormone, in the bloodstream</string>
+    <string name="q1_o3">Being overweight or obese</string>
+    <string name="q1_o4">High cholesterol levels</string>
+    <string name="second_q">Question 2</string>
+    <string name="question_2">Monitoring your blood glucose will:</string>
+    <string name="q2_o1">Allow you to eat whatever you choose</string>
+    <string name="q2_o2">Ensure that your blood glucose level stays normal</string>
+    <string name="q2_o3">Give you the feedback you need to keep your blood glucose in target range</string>
+    <string name="q2_o4">Not be necessary, as long as you eat right</string>
+    <string name="question_3">Question 3</string>
+    <string name="third_q">Type 2 Diabetes may be treated with which of the following? (select all that apply)</string>
+    <string name="q3_o1">Oral medications</string>
+    <string name="q3_o2">Drinking 100% fruit juice</string>
+    <string name="q3_o3">Insulin</string>
+    <string name="q3_o4">Lifestyle changes, such as diet and exercise</string>
+    <string name="q3_o5">Avoiding sunlight</string>
+    <string name="question_4">Question 4</string>
+    <string name="fourth_q">In type 2 diabetes, your body does not use insulin properly. This is called insulin resistance. At first, your body makes extra insulin to make up for it. But, over time your __________ isn’t able to keep up and can’t make enough insulin to keep your blood glucose levels normal.</string>
+    <string name="q4_o1">Liver</string>
+    <string name="q4_o2">Pancreas</string>
+    <string name="q4_o3">Thyroid</string>
+    <string name="q4_04">Gallbladder</string>
+    <string name="question_5">Question 5</string>
+    <string name="fifth_q">Over time, high blood glucose levels may affect which of the following? (select all that apply)</string>
+    <string name="q5_o1">Kidneys</string>
+    <string name="q5_o2">Eyes</string>
+    <string name="q5_o3">Nerves</string>
+    <string name="q5_o4">Heart</string>
+    <string name="q5_o5">Mental Health</string>
+    <string name="check">Check My Answers</string>
+    <string name="show">Show Correct Answers</string>
+    <string name="main">Back to Main Page</string>
     <string-array name="age_array">
         <item>Less than 40 years</item>
         <item>40-49 years</item>
@@ -15,6 +51,14 @@
         <item>Yes</item>
     </string-array>
     <string-array name="relative_array">
+        <item>No</item>
+        <item>Yes</item>
+    </string-array>
+    <string-array name="bp_array">
+        <item>No</item>
+        <item>Yes</item>
+    </string-array>
+    <string-array name="active_array">
         <item>No</item>
         <item>Yes</item>
     </string-array>
